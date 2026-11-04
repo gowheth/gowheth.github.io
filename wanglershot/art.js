@@ -2,7 +2,7 @@ export const SYMBOL_EMOJI = {
   'camera': '📷', 'mountain.2.fill': '🏔️', 'building.2.fill': '🌃', 'moon.fill': '🌕', 'ferry.fill': '⛴️',
   'sparkles': '✨', 'drop.fill': '💧', 'water.waves': '🌊', 'airplane': '✈️', 'bird.fill': '🐦',
   'pawprint.fill': '🐾', 'sun.max.fill': '☀️', 'cloud.sun.fill': '⛅', 'leaf.fill': '🍃', 'car.fill': '🚗',
-  'figure.walk': '🚶', 'flame.fill': '🔥', 'snowflake': '❄️', 'camera.macro': '🌷', 'person.fill': '🧑', 'sun.horizon.fill': '🌅'
+  'figure.walk': '🚶', 'flame.fill': '🔥', 'snowflake': '❄️', 'camera.macro': '🌷', 'person.fill': '🧑', 'sun.horizon.fill': '🌅', 'sunrise.fill': '🌄'
 };
 
 export const emojiFor = symbol => SYMBOL_EMOJI[symbol] ?? (symbol && [...symbol].length <= 2 ? symbol : '📷');
@@ -311,6 +311,27 @@ const SCENES = {
       c.lineWidth = 2.5;
       c.stroke();
     }
+  },
+  'sunrise'(c, w, h) {
+    const hz = h * 0.62;
+    vgrad(c, 0, 0, w, hz, ['#22305e', '#7a6aa8', '#f0a3a8', '#ffd9a0']);
+    const sx = w * 0.62, sr = Math.min(w, h) * 0.13;
+    glow(c, 20, () => ellipse(c, sx - sr * 2, hz - sr * 2.2, sr * 4, sr * 4, 'rgba(255,215,150,0.6)'));
+    c.save();
+    c.beginPath();
+    c.rect(0, 0, w, hz - h * 0.06);
+    c.clip();
+    ellipse(c, sx - sr, hz - h * 0.06 - sr * 0.7, sr * 2, sr * 2, '#fff1c9');
+    c.restore();
+    poly(c, [[0, hz], [0, h * 0.46], [w * 0.16, h * 0.4], [w * 0.34, h * 0.5], [w * 0.5, h * 0.44], [w * 0.72, h * 0.56], [w * 0.9, h * 0.5], [w, h * 0.54], [w, hz]], '#5b4a78');
+    glow(c, 8, () => { c.fillStyle = 'rgba(255,235,230,0.55)'; c.fillRect(0, h * 0.53, w, h * 0.06); });
+    poly(c, [[0, hz], [0, h * 0.56], [w * 0.22, h * 0.52], [w * 0.45, h * 0.6], [w * 0.7, h * 0.57], [w, h * 0.6], [w, hz]], '#2e2440');
+    vgrad(c, 0, hz, w, h - hz, ['#8f7fb0', '#2a2440']);
+    for (let i = 0; i < 7; i++) {
+      const y = hz + 4 + i * (h - hz) / 8, half = sr * (0.9 - i * 0.08);
+      glow(c, 1.5, () => { c.fillStyle = `rgba(255,225,170,${0.7 - i * 0.08})`; c.fillRect(sx - half, y, half * 2, 2); });
+    }
+    glow(c, 10, () => ellipse(c, -w * 0.1, hz - 6, w * 1.2, h * 0.08, 'rgba(255,255,255,0.35)'));
   }
 };
 

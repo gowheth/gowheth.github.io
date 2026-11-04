@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "gear": [
     {
       "id": "r8",
@@ -1165,6 +1165,120 @@
         "At 400mm, only aim at the sun when it's low and orange at the horizon — a bright sun through a long lens can damage the sensor.",
         "Auto WB neutralizes the warm colors — set Daylight or Cloudy.",
         "A polarizer does little toward the sun and makes the 15mm sky uneven — set it to minimum or remove it.",
+        "Laowa 15 has no contacts: enable Release shutter w/o lens."
+      ]
+    },
+    {
+      "id": "sunrise",
+      "title": "Sunrise",
+      "symbol": "sunrise.fill",
+      "summary": "Pre-dawn color, mist and first light",
+      "settings": [
+        {
+          "label": "Mode",
+          "value": "M in blue hour → Av once the sun is up"
+        },
+        {
+          "label": "Aperture",
+          "value": "f/8 – f/11 · f/16 for a sunstar (Laowa)"
+        },
+        {
+          "label": "Shutter",
+          "value": "2 – 15 s pre-dawn → 1/60+ after sunrise"
+        },
+        {
+          "label": "ISO",
+          "value": "100 on tripod"
+        },
+        {
+          "label": "White Balance",
+          "value": "Daylight 5200K (keeps pink and blue tones)"
+        },
+        {
+          "label": "Focus",
+          "value": "AF on a lit object or Laowa MF ~1 m, then switch to MF"
+        },
+        {
+          "label": "Drive",
+          "value": "AEB 3 frames ±2 EV · 2-s timer"
+        },
+        {
+          "label": "IS",
+          "value": "Off on tripod"
+        },
+        {
+          "label": "Metering",
+          "value": "Evaluative on sky beside the sun · re-check every few minutes"
+        },
+        {
+          "label": "Exp. comp",
+          "value": "−⅓ to −⅔ EV"
+        },
+        {
+          "label": "Timing",
+          "value": "Blue hour 30–40 min before · peak color 15 min before to 10 min after"
+        },
+        {
+          "label": "File",
+          "value": "RAW"
+        }
+      ],
+      "gear": [
+        {
+          "gearID": "laowa15",
+          "role": "lens",
+          "note": "Wide sky + foreground; f/16 for a sunstar"
+        },
+        {
+          "gearID": "kf72-vnd-cpl",
+          "role": "filter",
+          "note": "Laowa: ND to smooth water once it's bright"
+        },
+        {
+          "gearID": "rf24-50",
+          "role": "lens",
+          "note": "General scenes"
+        },
+        {
+          "gearID": "rf100-400",
+          "role": "lens",
+          "note": "Sun through mist and layered hills"
+        },
+        {
+          "gearID": "rt75c",
+          "role": "support",
+          "note": "Set up in the dark"
+        },
+        {
+          "gearID": "lh40",
+          "role": "support",
+          "note": ""
+        },
+        {
+          "gearID": "intervalometer",
+          "role": "accessory",
+          "note": "Long pre-dawn exposures"
+        }
+      ],
+      "steps": [
+        "Check sunrise time and the compass direction the night before; charge batteries.",
+        "Arrive 45 min before sunrise and set up by headlamp (red light keeps your night vision).",
+        "Compose in the dark with a test shot at ISO 6400, 5 s, then return to ISO 100.",
+        "M, f/8, ISO 100, Daylight WB; expose blue hour at 2–15 s.",
+        "As the sky brightens, shorten the shutter; switch to Av −⅓ EV once the sun is up.",
+        "AEB ±2 EV around the moment of sunrise.",
+        "Keep shooting 15–20 min after for golden side-light on the landscape."
+      ],
+      "tips": [
+        "Calm, cold mornings bring mist over water and valleys — use the 100-400 on the layers.",
+        "Turn around: the pink Belt of Venus glows opposite the sunrise before the sun appears.",
+        "East-facing water reflects the strongest color 10–15 min before sunrise."
+      ],
+      "warnings": [
+        "Light brightens fast — a setting that worked 5 minutes ago will overexpose. Check the histogram every few frames.",
+        "Dew forms on the lens before dawn — keep the cap on until you shoot and wipe the front element and filter first.",
+        "At 400mm, only aim at the sun while it's low and orange — it gets bright within minutes of clearing the horizon.",
+        "Cold mornings drain the LP-E17 quickly — keep a spare battery in an inside pocket.",
         "Laowa 15 has no contacts: enable Release shutter w/o lens."
       ]
     }

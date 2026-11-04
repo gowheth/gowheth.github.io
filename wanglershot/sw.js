@@ -1,4 +1,4 @@
-const CACHE = 'wanglershot-v3';
+const CACHE = 'wanglershot-v4';
 const ASSETS = [
   './',
   './index.html',
