@@ -2,7 +2,7 @@ export const SYMBOL_EMOJI = {
   'camera': '📷', 'mountain.2.fill': '🏔️', 'building.2.fill': '🌃', 'moon.fill': '🌕', 'ferry.fill': '⛴️',
   'sparkles': '✨', 'drop.fill': '💧', 'water.waves': '🌊', 'airplane': '✈️', 'bird.fill': '🐦',
   'pawprint.fill': '🐾', 'sun.max.fill': '☀️', 'cloud.sun.fill': '⛅', 'leaf.fill': '🍃', 'car.fill': '🚗',
-  'figure.walk': '🚶', 'flame.fill': '🔥', 'snowflake': '❄️', 'camera.macro': '🌷', 'person.fill': '🧑'
+  'figure.walk': '🚶', 'flame.fill': '🔥', 'snowflake': '❄️', 'camera.macro': '🌷', 'person.fill': '🧑', 'sun.horizon.fill': '🌅'
 };
 
 export const emojiFor = symbol => SYMBOL_EMOJI[symbol] ?? (symbol && [...symbol].length <= 2 ? symbol : '📷');
@@ -277,6 +277,40 @@ const SCENES = {
     c.stroke();
     bird(c, w * 0.52, h * 0.6, Math.min(w, h) * 0.14, '#59381f', false);
     for (let i = 0; i < 3; i++) bird(c, w * (0.18 + i * 0.14), h * (0.16 + i * 0.06), Math.min(w, h) * (0.06 - i * 0.01), 'rgba(51,51,64,0.8)', true);
+  },
+  'sunset'(c, w, h) {
+    const hz = h * 0.6;
+    vgrad(c, 0, 0, w, hz, ['#2b1a4f', '#a8336b', '#f2703a', '#ffc35c']);
+    const sx = w * 0.5, sr = Math.min(w, h) * 0.17;
+    glow(c, 22, () => ellipse(c, sx - sr * 2, hz - sr * 2, sr * 4, sr * 4, 'rgba(255,190,90,0.55)'));
+    c.save();
+    c.beginPath();
+    c.rect(0, 0, w, hz);
+    c.clip();
+    ellipse(c, sx - sr, hz - sr * 0.9, sr * 2, sr * 2, '#ffe39a');
+    c.restore();
+    for (let i = 0; i < 4; i++) {
+      glow(c, 4, () => ellipse(c, w * (0.05 + i * 0.25), h * (0.14 + (i % 2) * 0.1), w * 0.35, h * 0.05, 'rgba(255,140,120,0.45)'));
+    }
+    vgrad(c, 0, hz, w, h - hz, ['#6b2c4a', '#1a0f24']);
+    for (let i = 0; i < 9; i++) {
+      const y = hz + 4 + i * (h - hz) / 10, half = sr * (1.1 - i * 0.08);
+      glow(c, 1.5, () => { c.fillStyle = `rgba(255,205,120,${0.75 - i * 0.07})`; c.fillRect(sx - half, y, half * 2, 2); });
+    }
+    poly(c, [[0, hz + 2], [0, h * 0.42], [w * 0.1, h * 0.46], [w * 0.2, h * 0.52], [w * 0.3, hz + 2]], '#120a14');
+    c.strokeStyle = '#120a14';
+    c.lineWidth = 3;
+    c.beginPath();
+    c.moveTo(w * 0.86, hz + 2);
+    c.quadraticCurveTo(w * 0.84, h * 0.4, w * 0.8, h * 0.3);
+    c.stroke();
+    for (const a of [-2.6, -2.2, -1.6, -1.0, -0.5]) {
+      c.beginPath();
+      c.moveTo(w * 0.8, h * 0.3);
+      c.quadraticCurveTo(w * 0.8 + Math.cos(a) * 18, h * 0.3 + Math.sin(a) * 18 - 6, w * 0.8 + Math.cos(a) * 34, h * 0.3 + Math.sin(a) * 30 + 10);
+      c.lineWidth = 2.5;
+      c.stroke();
+    }
   }
 };
 
