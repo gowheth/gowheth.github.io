@@ -780,7 +780,7 @@ async function boot() {
     storageOK = false;
   }
   try {
-    const res = await fetch('seed.json', { cache: 'no-cache' });
+    const res = await fetch('seed.json');
     seed = await res.json();
     if (core.importSeed(state, seed, { hasCover: id => !!covers[id] })) await saveNow();
   } catch {
@@ -789,10 +789,18 @@ async function boot() {
   navigator.storage?.persist?.().catch(() => {});
   if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
     const hadController = !!navigator.serviceWorker.controller;
-    navigator.serviceWorker.addEventListener('controllerchange', () => {
-      if (hadController) toast('Update installed. Close and reopen WanglerShot to use it.');
+    let reloading = false;
+    navigator.serviceWorker.addEventListener('controllerchange', async () => {
+      if (!hadController || reloading) return;
+      if (layers.some(l => l.el.classList.contains('sheet'))) {
+        toast('Update installed. Close and reopen WanglerShot to use it.');
+        return;
+      }
+      reloading = true;
+      await saveNow();
+      location.reload();
     });
-    navigator.serviceWorker.register('sw.js').catch(() => {});
+    navigator.serviceWorker.register('sw.js', { updateViaCache: 'none' }).then(reg => reg.update()).catch(() => {});
   }
   history.replaceState({ depth: 0 }, '');
   renderHome();

@@ -1,4 +1,4 @@
-const CACHE = 'wanglershot-v4';
+const CACHE = 'wanglershot-v5';
 const ASSETS = [
   './',
   './index.html',
@@ -14,7 +14,11 @@ const ASSETS = [
 ];
 
 self.addEventListener('install', event => {
-  event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting()));
+  event.waitUntil(
+    caches.open(CACHE)
+      .then(cache => cache.addAll(ASSETS.map(url => new Request(url, { cache: 'reload' }))))
+      .then(() => self.skipWaiting())
+  );
 });
 
 self.addEventListener('activate', event => {
@@ -31,20 +35,16 @@ self.addEventListener('fetch', event => {
   event.respondWith(
     caches.open(CACHE).then(async cache => {
       const cached = await cache.match(req, { ignoreSearch: true });
-      const network = fetch(req)
-        .then(res => {
-          if (res && res.ok) cache.put(req, res.clone());
-          return res;
-        })
-        .catch(() => null);
-      if (cached) {
-        event.waitUntil(network);
-        return cached;
+      if (cached) return cached;
+      if (req.mode === 'navigate') {
+        const shell = await cache.match('./index.html');
+        if (shell) return shell;
       }
-      const res = await network;
-      if (res) return res;
-      if (req.mode === 'navigate') return (await cache.match('./index.html')) ?? Response.error();
-      return Response.error();
+      try {
+        return await fetch(req);
+      } catch {
+        return Response.error();
+      }
     })
   );
 });
