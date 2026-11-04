@@ -1,0 +1,437 @@
+{
+  "version": 2,
+  "gear": [
+    {"id": "r8", "name": "Canon EOS R8", "category": "body", "details": "24.2MP full-frame. No in-body stabilization — only lens IS. No full mechanical shutter (electronic first-curtain or electronic). LP-E17 battery: short life, carry spares. E3 wired-remote socket. Built-in Interval timer, Bulb timer and Time-lapse movie."},
+    {"id": "laowa15", "name": "Laowa 15mm f/2 Zero-D", "category": "lens", "filterThread": "72mm", "details": "RF mount, manual focus and manual aperture ring, no electronic contacts. Needs Release shutter w/o lens: Enable. Near-zero distortion, 110° view. No EXIF lens data."},
+    {"id": "rf24-50", "name": "Canon RF 24-50mm f/4.5-6.3 IS STM", "category": "lens", "filterThread": "58mm", "details": "Compact kit zoom with optical IS. No filters in kit fit 58mm."},
+    {"id": "rfs55-210", "name": "Canon RF-S 55-210mm f/5-7.1 IS STM", "category": "lens", "filterThread": "55mm", "details": "APS-C lens: R8 auto-crops to ~10MP, 88–336mm equivalent. Optical IS."},
+    {"id": "rf100-400", "name": "Canon RF 100-400mm f/5.6-8 IS USM", "category": "lens", "filterThread": "67mm", "details": "Optical IS, fast Nano USM AF. Main lens for moon, aircraft and wildlife."},
+    {"id": "sy135", "name": "Samyang 135mm f/2 (SY135M-C)", "category": "lens", "filterThread": "77mm", "details": "EF mount, manual focus, manual aperture, no electronic contacts. Mounts through the Drop-in Filter Adapter. Needs Release shutter w/o lens: Enable. No stabilization."},
+    {"id": "kit55-uv", "name": "UV filter 55mm", "category": "filter", "filterThread": "55mm", "details": "Protection only. Remove at night to avoid ghosting."},
+    {"id": "kit55-cpl", "name": "Circular polarizer 55mm", "category": "filter", "filterThread": "55mm", "details": "Cuts glare and haze, deepens blue sky. Costs ~1.5 stops."},
+    {"id": "kit55-fld", "name": "FLD filter 55mm", "category": "filter", "filterThread": "55mm", "details": "Corrects green fluorescent cast. Rarely needed shooting RAW."},
+    {"id": "nisi67-cpl", "name": "NiSi True Color CPL 67mm", "category": "filter", "filterThread": "67mm", "details": "Neutral polarizer for the RF 100-400. Cuts atmospheric haze at long focal lengths. Costs ~1.5 stops."},
+    {"id": "kf72-vnd-cpl", "name": "K&F Variable ND (ND4–ND64) + CPL 72mm", "category": "filter", "filterThread": "72mm", "details": "2–6 stops variable ND with built-in polarizer. Near the max end it can show a dark X on the 15mm — back off a little."},
+    {"id": "neewer72-nd1000", "name": "NEEWER ND1000 10-stop 72mm", "category": "filter", "filterThread": "72mm", "details": "10 stops: multiply metered time by ~1000 (1/30 s → 30 s). Expect a slight color cast; fix WB in RAW."},
+    {"id": "nisi72-night", "name": "NiSi Natural Night 72mm", "category": "filter", "filterThread": "72mm", "details": "Light-pollution filter. Cuts orange sodium street-light glow; slight cool cast."},
+    {"id": "dropin-adapter", "name": "Canon Drop-in Filter Mount Adapter EF-EOS R", "category": "accessory", "details": "EF→RF adapter with filter slot. Required for the Samyang 135. Keep a drop-in filter (Clear A if nothing else) in the slot."},
+    {"id": "dropin-cpl", "name": "Drop-in Circular Polarizing Filter A", "category": "filter", "details": "Polarizer for EF lenses on the adapter. Rotate with the thumbwheel on the filter."},
+    {"id": "dropin-clear", "name": "Drop-in Clear Filter A", "category": "filter", "details": "Default insert for the adapter when no other drop-in filter is used."},
+    {"id": "dropin-lp", "name": "Drop-in astro light-pollution filter", "category": "filter", "details": "Cuts sodium/mercury light pollution on EF lenses through the adapter."},
+    {"id": "rt75c", "name": "INNOREL RT75C carbon tripod", "category": "support", "details": "Carbon legs, no head. Hang your bag from the hook in wind."},
+    {"id": "er362c", "name": "INNOREL ER362C center column extension", "category": "support", "details": "Extra height. Raising the column adds shake — avoid for long exposures and 400mm."},
+    {"id": "lh40", "name": "Leofoto LH-40 ball head", "category": "support", "details": "Low-profile ball head, Arca quick release."},
+    {"id": "intervalometer", "name": "Wired intervalometer (E3)", "category": "accessory", "details": "Plugs into the R8 remote socket. Delay, long-exposure (bulb), interval and frame count."}
+  ],
+  "guides": [
+    {
+      "id": "ocean-landscape-day",
+      "title": "Ocean & Landscape",
+      "symbol": "mountain.2.fill",
+      "summary": "Daytime coast and scenery, sharp front to back",
+      "settings": [
+        {"label": "Mode", "value": "Av"},
+        {"label": "Aperture", "value": "f/8 – f/11"},
+        {"label": "Shutter", "value": "Auto (≥ 1/125 handheld)"},
+        {"label": "ISO", "value": "100 (Auto max 400 handheld)"},
+        {"label": "White Balance", "value": "Daylight 5200K"},
+        {"label": "Focus", "value": "One Shot, 1 point ⅓ into scene · Laowa: MF ~1 m at f/8"},
+        {"label": "Drive", "value": "Single · Electronic 1st-curtain"},
+        {"label": "IS", "value": "On handheld · Off on tripod"},
+        {"label": "Metering", "value": "Evaluative"},
+        {"label": "Exp. comp", "value": "−⅓ to −⅔ EV"},
+        {"label": "File", "value": "RAW"}
+      ],
+      "gear": [
+        {"gearID": "laowa15", "role": "lens", "note": "Wide seascapes, strong foregrounds"},
+        {"gearID": "rf24-50", "role": "lens", "note": "General scenes, lightest kit"},
+        {"gearID": "rf100-400", "role": "lens", "note": "Compressed headlands and distant waves"},
+        {"gearID": "kf72-vnd-cpl", "role": "filter", "note": "Laowa: use the CPL ring, ND at minimum"},
+        {"gearID": "nisi67-cpl", "role": "filter", "note": "100-400: cuts sea haze"},
+        {"gearID": "rt75c", "role": "support", "note": "Optional; needed for bracketing"},
+        {"gearID": "lh40", "role": "support", "note": ""}
+      ],
+      "steps": [
+        "Mount the lens. Laowa: enable Release shutter w/o lens.",
+        "Av, f/8, ISO 100, Daylight WB, RAW.",
+        "Fit the polarizer and rotate it until glare on water and foliage drops.",
+        "Focus ⅓ into the scene (Laowa: set ~1 m on the scale at f/8 — sharp from ~0.5 m to infinity).",
+        "Level the horizon with the electronic level (INFO button).",
+        "Check the histogram and highlight alert; pull exposure comp down until whites stop blinking.",
+        "High contrast? Use AEB 3 frames ±2 EV on the tripod and blend later."
+      ],
+      "tips": [
+        "Best light: first and last hour of sun.",
+        "Put a rock, tide pool or driftwood in the bottom third.",
+        "f/16+ softens the image from diffraction — stay at f/8–f/11."
+      ],
+      "warnings": [
+        "A polarizer on the 15mm darkens the sky unevenly — rotate to minimum or remove it when the sky fills the frame.",
+        "Highlight Tone Priority (D+) raises the minimum ISO to 200 — leave it off and bracket instead.",
+        "Laowa 15 has no contacts: without Release shutter w/o lens the shutter will not fire."
+      ]
+    },
+    {
+      "id": "street-night",
+      "title": "Night Street",
+      "symbol": "building.2.fill",
+      "summary": "City scenes at night or late evening, handheld",
+      "settings": [
+        {"label": "Mode", "value": "Av (or M + Auto ISO)"},
+        {"label": "Aperture", "value": "f/2 – f/4 primes · wide open on 24-50"},
+        {"label": "Shutter", "value": "≥ 1/125 people · ≥ 1/30 static"},
+        {"label": "ISO", "value": "Auto, max 12800"},
+        {"label": "White Balance", "value": "Auto (White priority) or 3800K"},
+        {"label": "Focus", "value": "Servo + Eye detect (24-50) · MF zone ~3 m at f/4 (primes)"},
+        {"label": "Drive", "value": "Low-speed continuous · Electronic 1st-curtain"},
+        {"label": "IS", "value": "On (24-50) · none on the primes"},
+        {"label": "Metering", "value": "Evaluative"},
+        {"label": "Exp. comp", "value": "−⅔ EV to keep the night mood"},
+        {"label": "Long exp. NR", "value": "Off"}
+      ],
+      "gear": [
+        {"gearID": "rf24-50", "role": "lens", "note": "Stabilized, autofocus"},
+        {"gearID": "laowa15", "role": "lens", "note": "f/2 wide; zone focus"},
+        {"gearID": "sy135", "role": "lens", "note": "f/2 candids from across the street"},
+        {"gearID": "dropin-adapter", "role": "accessory", "note": "Required for the 135"},
+        {"gearID": "dropin-clear", "role": "filter", "note": "Default insert in the adapter"}
+      ],
+      "steps": [
+        "Remove screw-on UV/protective filters — they cause ghosting from street lights.",
+        "Set Shutter mode to Electronic 1st-curtain.",
+        "Av, widest practical aperture, Auto ISO max 12800 with a minimum shutter speed set in Auto ISO.",
+        "24-50: Servo AF, subject People, Eye detection on.",
+        "Primes: MF, focus peaking on, pre-focus ~3 m at f/4 and shoot from the hip.",
+        "Exposure comp −⅔ EV so lights don't blow out and shadows stay dark."
+      ],
+      "tips": [
+        "Wet pavement doubles the light — shoot after rain.",
+        "Stand still near a lit shop window and let people walk into the light.",
+        "Blue hour (20–40 min after sunset) balances sky and street lights."
+      ],
+      "warnings": [
+        "Electronic shutter shows banding under LED and sodium lights — use Electronic 1st-curtain.",
+        "R8 has no IBIS: the Laowa 15 and Samyang 135 are unstabilized — stay ≥ 1/30 at 15mm and ≥ 1/250 at 135mm.",
+        "Laowa and Samyang have no contacts: enable Release shutter w/o lens."
+      ]
+    },
+    {
+      "id": "moon",
+      "title": "Moon",
+      "symbol": "moon.fill",
+      "summary": "Detailed moon at 400mm",
+      "settings": [
+        {"label": "Mode", "value": "M"},
+        {"label": "Aperture", "value": "f/8 (wide open at 400mm)"},
+        {"label": "Shutter", "value": "1/125 – 1/250 full · 1/30 – 1/60 crescent"},
+        {"label": "ISO", "value": "100 – 400"},
+        {"label": "White Balance", "value": "Daylight 5200K"},
+        {"label": "Focus", "value": "MF, 10× magnified on the shadow line"},
+        {"label": "Drive", "value": "2-s timer or intervalometer · Electronic shutter"},
+        {"label": "IS", "value": "Off on tripod"},
+        {"label": "Metering", "value": "Spot, or use the histogram"},
+        {"label": "Start point", "value": "Looney 11: f/11 at 1/ISO"},
+        {"label": "File", "value": "RAW"}
+      ],
+      "gear": [
+        {"gearID": "rf100-400", "role": "lens", "note": "At 400mm"},
+        {"gearID": "rt75c", "role": "support", "note": "Keep the center column down"},
+        {"gearID": "lh40", "role": "support", "note": ""},
+        {"gearID": "intervalometer", "role": "accessory", "note": "Or the 2-s self-timer"}
+      ],
+      "steps": [
+        "Tripod low and solid; center column down.",
+        "Lens at 400mm, IS off (lens switch or the camera's IS menu), focus to MF.",
+        "M mode, f/8, 1/250, ISO 200 as a starting point.",
+        "Magnify 10× on the terminator (shadow edge) and focus until craters are crisp.",
+        "Check the histogram: the moon's brightest part should sit just left of the right edge.",
+        "Fire with the 2-s timer or intervalometer; take 20–50 frames to stack later."
+      ],
+      "tips": [
+        "Half moon shows more crater detail than full moon.",
+        "Shoot when the moon is high — low moons are blurred by atmosphere.",
+        "Include a landscape? Shoot a moonrise at dusk when sky and land are both lit."
+      ],
+      "warnings": [
+        "Evaluative metering overexposes the moon against a black sky — use M.",
+        "Turn IS off on the tripod — at 400mm it can drift.",
+        "The ER362C extension adds shake at 400mm — leave it off."
+      ]
+    },
+    {
+      "id": "ferry-night-timelapse",
+      "title": "Ferry Night Time-lapse",
+      "symbol": "ferry.fill",
+      "summary": "Ferry crossing at night as a time-lapse",
+      "settings": [
+        {"label": "Mode", "value": "M (everything locked)"},
+        {"label": "Aperture", "value": "f/8 (24-50) · f/5.6 (Laowa)"},
+        {"label": "Shutter", "value": "2 – 4 s for light trails on water"},
+        {"label": "ISO", "value": "100 – 400"},
+        {"label": "White Balance", "value": "Manual 3500 – 4000K (never Auto)"},
+        {"label": "Focus", "value": "AF on far lights, then switch to MF"},
+        {"label": "Drive", "value": "Interval timer · interval = shutter + 1–2 s"},
+        {"label": "IS", "value": "Off"},
+        {"label": "Metering", "value": "Evaluative to set, then lock in M"},
+        {"label": "Frames", "value": "240 = 10 s clip at 24 fps (5 s interval ≈ 20 min)"},
+        {"label": "Long exp. NR", "value": "Off"}
+      ],
+      "gear": [
+        {"gearID": "rf24-50", "role": "lens", "note": "Frame the crossing"},
+        {"gearID": "laowa15", "role": "lens", "note": "Harbor + sky"},
+        {"gearID": "nisi72-night", "role": "filter", "note": "Laowa: tames orange harbor lights"},
+        {"gearID": "kf72-vnd-cpl", "role": "filter", "note": "Laowa at dusk: longer trails"},
+        {"gearID": "rt75c", "role": "support", "note": ""},
+        {"gearID": "lh40", "role": "support", "note": ""},
+        {"gearID": "intervalometer", "role": "accessory", "note": "Or the built-in Interval timer"}
+      ],
+      "steps": [
+        "Arrive before the ferry; tripod out of foot traffic, bag hung for weight.",
+        "Compose with space for the ferry's path.",
+        "M mode, f/8, 3 s, ISO 200; adjust ISO until the histogram looks right.",
+        "Manual WB ~3800K; Long exposure NR Off; Wi-Fi and Bluetooth off.",
+        "Focus on distant lights with AF, then flip to MF so it can't refocus.",
+        "Interval 4–5 s (shutter + 1–2 s), frames 240+; start the interval timer or intervalometer.",
+        "Don't touch the tripod until it finishes."
+      ],
+      "tips": [
+        "Shutter of 2–4 s turns ferry lights into streaks while keeping the hull recognizable.",
+        "In-camera Time-lapse movie gives a ready 4K clip but no RAW frames.",
+        "Start in blue hour and let it run into darkness for a day-to-night transition (use Av with care, or adjust ISO between frames in small steps)."
+      ],
+      "warnings": [
+        "Long exposure noise reduction doubles each frame's time and leaves gaps — turn it Off.",
+        "Auto WB, Auto ISO or Av cause flicker between frames — lock everything in M.",
+        "An active Wi-Fi/Bluetooth connection can block the built-in interval timer — turn them off or use the wired intervalometer.",
+        "LP-E17 batteries run down fast on long sequences — start with a full one."
+      ]
+    },
+    {
+      "id": "star-trails",
+      "title": "Star Trails",
+      "symbol": "sparkles",
+      "summary": "Stacked 30-s frames over 1–2 hours",
+      "settings": [
+        {"label": "Mode", "value": "M"},
+        {"label": "Aperture", "value": "f/2.8 (f/2 shows edge coma)"},
+        {"label": "Shutter", "value": "30 s per frame"},
+        {"label": "ISO", "value": "800 – 1600 dark sky · 400 suburban"},
+        {"label": "White Balance", "value": "3800 – 4200K"},
+        {"label": "Focus", "value": "MF on a bright star at 10×, then tape the ring"},
+        {"label": "Drive", "value": "Wired: 30 s exp + 1 s gap · Built-in timer: 31–32 s interval · 120–240 frames"},
+        {"label": "IS", "value": "None on the Laowa"},
+        {"label": "Metering", "value": "Manual — histogram peak ~⅓ from left"},
+        {"label": "Long exp. NR", "value": "Off"},
+        {"label": "File", "value": "RAW"}
+      ],
+      "gear": [
+        {"gearID": "laowa15", "role": "lens", "note": "Wide sky with foreground"},
+        {"gearID": "nisi72-night", "role": "filter", "note": "Only near towns"},
+        {"gearID": "rt75c", "role": "support", "note": "Legs spread wide, column down"},
+        {"gearID": "lh40", "role": "support", "note": ""},
+        {"gearID": "intervalometer", "role": "accessory", "note": "Or built-in Interval timer"}
+      ],
+      "steps": [
+        "Enable Release shutter w/o lens. Wi-Fi and Bluetooth off.",
+        "Point north at Polaris for circles, or east/west for straight lines; include a foreground.",
+        "M mode, f/2.8, 30 s, ISO 1600, WB 4000K, Long exp. NR Off.",
+        "Magnify 10× on a bright star; turn the focus ring until it's smallest. Tape the ring.",
+        "Take a test shot and check the histogram; adjust ISO.",
+        "Wired intervalometer: 30 s exposure, 1 s gap. Built-in Interval timer: interval is start-to-start, so set 31–32 s. 120–240 frames (1–2 hrs).",
+        "At the end, take 10 dark frames with the lens cap on, same settings.",
+        "Stack in StarStaX or Sequator."
+      ],
+      "tips": [
+        "New moon gives the darkest sky; a quarter moon lights the foreground nicely.",
+        "A brief headlamp sweep over the foreground in one frame adds detail.",
+        "Plane trails can be removed during stacking."
+      ],
+      "warnings": [
+        "Long exposure noise reduction doubles each frame and leaves gaps in the trails — must be Off.",
+        "Dew fogs the front element over hours — check every 20–30 min.",
+        "LP-E17 may not last 2 hours, especially in cold — use a USB-C PD power bank if yours supports camera power, or swap between sequences.",
+        "Laowa 15 has no contacts: enable Release shutter w/o lens."
+      ]
+    },
+    {
+      "id": "waterfall-le",
+      "title": "Waterfall Long Exposure",
+      "symbol": "drop.fill",
+      "summary": "Silky water in daylight with ND",
+      "settings": [
+        {"label": "Mode", "value": "M"},
+        {"label": "Aperture", "value": "f/8 – f/11"},
+        {"label": "Shutter", "value": "½ – 2 s silky · 1/4 s texture"},
+        {"label": "ISO", "value": "100"},
+        {"label": "White Balance", "value": "Daylight or Cloudy"},
+        {"label": "Focus", "value": "MF ~1 m on scale (Laowa) · AF on rocks then MF"},
+        {"label": "Drive", "value": "2-s timer or intervalometer"},
+        {"label": "IS", "value": "Off"},
+        {"label": "Metering", "value": "Evaluative · watch highlights on white water"},
+        {"label": "ND", "value": "K&F variable at 3–5 stops"},
+        {"label": "File", "value": "RAW"}
+      ],
+      "gear": [
+        {"gearID": "laowa15", "role": "lens", "note": "Whole falls + foreground"},
+        {"gearID": "kf72-vnd-cpl", "role": "filter", "note": "ND + glare cut on wet rocks"},
+        {"gearID": "rf100-400", "role": "lens", "note": "Intimate details of the cascade"},
+        {"gearID": "nisi67-cpl", "role": "filter", "note": "100-400: ~1.5 stops slower + less glare"},
+        {"gearID": "rt75c", "role": "support", "note": "Legs firm on rocks"},
+        {"gearID": "lh40", "role": "support", "note": ""},
+        {"gearID": "intervalometer", "role": "accessory", "note": "Or 2-s timer"}
+      ],
+      "steps": [
+        "Set up the tripod low and stable; spike legs between rocks.",
+        "Compose and focus first without the filter.",
+        "Attach the K&F; rotate the CPL ring to remove glare from wet rocks and leaves.",
+        "M, f/8, ISO 100; turn the ND ring until the shutter reaches ½–2 s at a good histogram.",
+        "Fire with the 2-s timer; shoot ¼, ½, 1, 2 s and compare.",
+        "Wipe spray off the filter between frames."
+      ],
+      "tips": [
+        "Overcast days are best — no harsh sun on white water.",
+        "Leaves or rocks in the foreground add depth.",
+        "Too much blur (>4 s) turns falls into fog — ½–2 s keeps structure."
+      ],
+      "warnings": [
+        "Near maximum, the variable ND can make a dark X across the 15mm frame — back off a stop.",
+        "Spray droplets on the filter show as blurry spots — check each frame zoomed in.",
+        "Laowa 15 has no contacts: enable Release shutter w/o lens."
+      ]
+    },
+    {
+      "id": "ocean-le",
+      "title": "Ocean Long Exposure",
+      "symbol": "water.waves",
+      "summary": "Glassy sea and streaky clouds with the 10-stop ND",
+      "settings": [
+        {"label": "Mode", "value": "M, Bulb beyond 30 s"},
+        {"label": "Aperture", "value": "f/11"},
+        {"label": "Shutter", "value": "30 s – 2 min (metered × 1000)"},
+        {"label": "ISO", "value": "100"},
+        {"label": "White Balance", "value": "Daylight (fix ND cast in RAW)"},
+        {"label": "Focus", "value": "Focus before fitting ND, then MF"},
+        {"label": "Drive", "value": "Bulb timer or intervalometer · 2-s delay"},
+        {"label": "IS", "value": "Off"},
+        {"label": "Metering", "value": "Meter without ND, then calculate"},
+        {"label": "Long exp. NR", "value": "On (single frames)"},
+        {"label": "Conversion", "value": "1/500→2s · 1/125→8s · 1/60→15s · 1/30→30s · 1/15→1m · 1/8→2m"}
+      ],
+      "gear": [
+        {"gearID": "laowa15", "role": "lens", "note": "Wide sea + sky"},
+        {"gearID": "neewer72-nd1000", "role": "filter", "note": "10 stops"},
+        {"gearID": "kf72-vnd-cpl", "role": "filter", "note": "Short 1–2 s wave motion instead"},
+        {"gearID": "rt75c", "role": "support", "note": "Push legs deep into sand"},
+        {"gearID": "lh40", "role": "support", "note": ""},
+        {"gearID": "intervalometer", "role": "accessory", "note": "Long-exposure timer"}
+      ],
+      "steps": [
+        "Tripod down firmly, above the surge line.",
+        "Compose, set focus (MF ~1 m at f/11), all before the filter.",
+        "M, f/11, ISO 100: meter without the filter — e.g. 1/30 s.",
+        "Screw on the ND1000 carefully without bumping focus.",
+        "Set Bulb; set the Bulb timer (or intervalometer) to metered time × 1000 — 1/30 → 30 s.",
+        "Fire with a 2-s delay; review the histogram and adjust time."
+      ],
+      "tips": [
+        "Clouds moving toward or away from you streak best.",
+        "Rocks or a pier give the smooth water a solid anchor.",
+        "Exposures over ~2 min: Long exp. NR doubles the wait — plan for it."
+      ],
+      "warnings": [
+        "With the ND1000 on, the EVF goes dark and AF hunts — focus and compose first.",
+        "Salt spray softens images — wipe the filter and shoot from upwind.",
+        "Rising tide sinks and shakes tripod legs — reset between frames."
+      ]
+    },
+    {
+      "id": "airplanes-day",
+      "title": "Low-flying Airplanes",
+      "symbol": "airplane",
+      "summary": "Approaches and fly-bys in daylight",
+      "settings": [
+        {"label": "Mode", "value": "Tv"},
+        {"label": "Aperture", "value": "Auto (f/8 at 400mm)"},
+        {"label": "Shutter", "value": "Jets 1/1000 – 1/2000 · Props 1/125 – 1/250"},
+        {"label": "ISO", "value": "Auto 100 – 3200"},
+        {"label": "White Balance", "value": "Daylight"},
+        {"label": "Focus", "value": "Servo · Subject: Vehicles · Tracking on · Whole area"},
+        {"label": "Drive", "value": "High-speed continuous · Electronic 1st-curtain"},
+        {"label": "IS", "value": "On (lens detects panning)"},
+        {"label": "Metering", "value": "Evaluative"},
+        {"label": "Exp. comp", "value": "+⅔ to +1 EV against bright sky"},
+        {"label": "File", "value": "RAW"}
+      ],
+      "gear": [
+        {"gearID": "rf100-400", "role": "lens", "note": "Main lens"},
+        {"gearID": "nisi67-cpl", "role": "filter", "note": "Cuts haze; bluer sky"},
+        {"gearID": "rfs55-210", "role": "lens", "note": "Lighter backup, 336mm-equiv in crop"},
+        {"gearID": "kit55-cpl", "role": "filter", "note": "On the 55-210"}
+      ],
+      "steps": [
+        "Stand with the sun behind you along the approach path.",
+        "Tv 1/1600 for jets, 1/160 for props; Auto ISO.",
+        "Servo AF, subject Vehicles, Tracking on, Whole-area AF.",
+        "Shutter mode Electronic 1st-curtain; High-speed continuous.",
+        "Exposure comp +⅔ EV; check the plane isn't a silhouette.",
+        "Start tracking early; pan smoothly and keep panning after the burst."
+      ],
+      "tips": [
+        "Props: slow shutter shows a full propeller disc — 1/125 at 100mm, 1/250 at 400mm.",
+        "Landing lights on approach make great head-on shots.",
+        "Heat shimmer over runways: shoot from a lower angle or earlier in the day."
+      ],
+      "warnings": [
+        "Electronic shutter (40 fps) bends propellers and fuselages while panning — use Electronic 1st-curtain.",
+        "Pre-shooting / RAW burst only works with the electronic shutter — fine for jets head-on, not for props.",
+        "Bright sky fools the meter into dark planes — add +⅔ to +1 EV."
+      ]
+    },
+    {
+      "id": "wildlife-day",
+      "title": "Wildlife & Birds",
+      "symbol": "bird.fill",
+      "summary": "Daytime wildlife in sun or under cloud",
+      "settings": [
+        {"label": "Mode", "value": "M + Auto ISO (or Tv)"},
+        {"label": "Aperture", "value": "Wide open (f/8 at 400mm)"},
+        {"label": "Shutter", "value": "Perched 1/500 – 1/1000 · Flight 1/2000 – 1/3200"},
+        {"label": "ISO", "value": "Auto, max 6400 sun · 12800 cloud"},
+        {"label": "White Balance", "value": "Daylight (sun) · Cloudy (overcast)"},
+        {"label": "Focus", "value": "Servo · Subject: Animals · Eye detect · Tracking"},
+        {"label": "Drive", "value": "High-speed · Electronic 1st-curtain (flight) · Electronic 40 fps (perched)"},
+        {"label": "IS", "value": "On"},
+        {"label": "Metering", "value": "Evaluative"},
+        {"label": "Exp. comp", "value": "Sun 0 to −⅔ (white birds) · Cloud +⅓ to +⅔"},
+        {"label": "File", "value": "RAW"}
+      ],
+      "gear": [
+        {"gearID": "rf100-400", "role": "lens", "note": "Main lens"},
+        {"gearID": "nisi67-cpl", "role": "filter", "note": "Water birds: cuts glare"},
+        {"gearID": "rfs55-210", "role": "lens", "note": "Light walk-around, 88–336mm equiv"},
+        {"gearID": "kit55-cpl", "role": "filter", "note": "On the 55-210"},
+        {"gearID": "sy135", "role": "lens", "note": "f/2 portraits of still subjects"},
+        {"gearID": "dropin-adapter", "role": "accessory", "note": "For the 135"},
+        {"gearID": "dropin-cpl", "role": "filter", "note": "In the adapter for water glare"}
+      ],
+      "steps": [
+        "Sun behind you; get low to the subject's eye level.",
+        "M mode, wide open, shutter per subject, Auto ISO with exposure comp.",
+        "Servo AF, subject Animals, Eye detection on, Tracking on.",
+        "Perched: Electronic shutter for silent 40 fps. Flight: switch to Electronic 1st-curtain.",
+        "Watch the highlight alert on white feathers; adjust exposure comp.",
+        "Short bursts; keep both eyes open to follow the subject."
+      ],
+      "tips": [
+        "Overcast light is softer for feathers and fur — raise Auto ISO max.",
+        "Leave space in front of the subject's eyes in the frame.",
+        "Silent electronic shutter keeps wary animals from flushing."
+      ],
+      "warnings": [
+        "Electronic shutter warps fast wingbeats — use Electronic 1st-curtain for flight.",
+        "White birds in sun blow out — dial −⅔ EV and watch the highlight alert.",
+        "No IBIS: the Samyang 135 is unstabilized — keep ≥ 1/500 and enable Release shutter w/o lens."
+      ]
+    }
+  ]
+}
