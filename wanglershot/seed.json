@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 21,
   "gear": [
     {
       "id": "r8",
@@ -19,7 +19,7 @@
       "name": "Canon RF 24-50mm f/4.5-6.3 IS STM",
       "category": "lens",
       "filterThread": "58mm",
-      "details": "Compact kit zoom with optical IS. No filters in kit fit 58mm."
+      "details": "Compact kit zoom with optical IS. Takes the 72mm filters through the Breakthrough 58→72 step-up ring."
     },
     {
       "id": "rfs55-210",
@@ -33,7 +33,7 @@
       "name": "Canon RF 100-400mm f/5.6-8 IS USM",
       "category": "lens",
       "filterThread": "67mm",
-      "details": "Optical IS, fast Nano USM AF. Main lens for moon, aircraft and wildlife."
+      "details": "Optical IS, fast Nano USM AF. Main lens for moon, aircraft and wildlife; mainly landscape with filters. Takes 72mm filters through the 67→72 step-up ring, and the K&F 100mm holder on its 67mm adapter ring."
     },
     {
       "id": "sy135",
@@ -92,6 +92,61 @@
       "details": "Light-pollution filter. Cuts orange sodium street-light glow; slight cool cast."
     },
     {
+      "id": "bp-58-72",
+      "name": "Breakthrough Photography brass step-up ring 58→72mm",
+      "category": "accessory",
+      "filterThread": "58→72mm",
+      "details": "Lets the RF 24-50 take every 72mm filter. Brass threads don't bind; leave it on the lens."
+    },
+    {
+      "id": "bp-67-72",
+      "name": "Breakthrough Photography brass step-up ring 67→72mm",
+      "category": "accessory",
+      "filterThread": "67→72mm",
+      "details": "Lets the RF 100-400 take the 72mm VND, ND1000 and Natural Night. Remove it to fit the NiSi 67mm CPL directly."
+    },
+    {
+      "id": "kf-nanox-holder",
+      "name": "K&F Concept Nano-X Pro 100mm filter holder kit",
+      "category": "accessory",
+      "filterThread": "100mm",
+      "details": "Square filter holder with slot for the 95mm CPL and 100×150mm filters. Adapter rings: 67, 72, 77 and 82mm. Used on the RF 100-400 (67mm ring)."
+    },
+    {
+      "id": "kf95-cpl",
+      "name": "K&F Concept 95mm CPL (holder)",
+      "category": "filter",
+      "filterThread": "95mm",
+      "details": "Polarizer in the back of the square holder, in front of the GND filters. Cuts glare, deepens sky. Remove at night."
+    },
+    {
+      "id": "kf-gnd8-hard",
+      "name": "K&F Concept Hard GND8 100×150mm",
+      "category": "filter",
+      "filterThread": "100×150mm",
+      "details": "Darkens the sky 3 stops with a sharp edge. For flat horizons: ocean, prairie. Slide the edge onto the horizon."
+    },
+    {
+      "id": "kf-gnd8-reverse",
+      "name": "K&F Concept Reverse GND8 100×150mm",
+      "category": "filter",
+      "filterThread": "100×150mm",
+      "details": "Darkest at the horizon, lighter above. For sunrise/sunset over water with the sun on the horizon."
+    },
+    {
+      "id": "optolong-uvir",
+      "name": "Optolong UV/IR Cut 1.25\"",
+      "category": "filter",
+      "filterThread": "1.25\"",
+      "details": "Blocks UV and IR for sharper, truer colour. 1.25\" eyepiece-barrel thread — does not fit the camera lenses."
+    },
+    {
+      "id": "zwo-adc",
+      "name": "ZWO 1.25\" Atmospheric Dispersion Corrector",
+      "category": "accessory",
+      "details": "Corrects the red/blue colour fringing the atmosphere adds to targets low in the sky. 1.25\" barrel — does not fit the camera lenses."
+    },
+    {
       "id": "dropin-adapter",
       "name": "Canon Drop-in Filter Mount Adapter EF-EOS R",
       "category": "accessory",
@@ -132,6 +187,18 @@
       "name": "Leofoto LH-40 ball head",
       "category": "support",
       "details": "Low-profile ball head, Arca quick release."
+    },
+    {
+      "id": "rt90c",
+      "name": "Leofoto RT90C carbon tripod",
+      "category": "support",
+      "details": "Heavy-duty carbon legs. Usually carries the telescope mount; the steadiest base for the 100-400 at 400mm."
+    },
+    {
+      "id": "k234a3",
+      "name": "K&F Concept K234A3 travel tripod",
+      "category": "support",
+      "details": "Aluminium travel tripod. Light for hikes; less steady in wind — hang your bag from the hook and keep the column down."
     },
     {
       "id": "intervalometer",
@@ -219,9 +286,34 @@
           "note": "100-400: cuts sea haze"
         },
         {
+          "gearID": "bp-58-72",
+          "role": "accessory",
+          "note": "24-50: fits the 72mm K&F"
+        },
+        {
+          "gearID": "kf-nanox-holder",
+          "role": "accessory",
+          "note": "100-400 on the 67mm adapter ring"
+        },
+        {
+          "gearID": "kf-gnd8-hard",
+          "role": "filter",
+          "note": "100-400: flat ocean horizon, edge on the horizon"
+        },
+        {
           "gearID": "rt75c",
           "role": "support",
           "note": "Optional; needed for bracketing"
+        },
+        {
+          "gearID": "k234a3",
+          "role": "support",
+          "note": "Lighter option for coastal walks"
+        },
+        {
+          "gearID": "rt90c",
+          "role": "support",
+          "note": "Steadiest for the 100-400 on distant headlands; swap the mount for the LH-40"
         },
         {
           "gearID": "lh40",
@@ -404,9 +496,19 @@
           "note": "At 400mm"
         },
         {
+          "gearID": "rt90c",
+          "role": "support",
+          "note": "Steadiest at 400mm; swap the mount for the LH-40"
+        },
+        {
           "gearID": "rt75c",
           "role": "support",
           "note": "Keep the center column down"
+        },
+        {
+          "gearID": "k234a3",
+          "role": "support",
+          "note": "Calm nights only; legs short, column down, 2-s timer"
         },
         {
           "gearID": "lh40",
@@ -511,9 +613,24 @@
           "note": "Laowa at dusk: longer trails"
         },
         {
+          "gearID": "bp-58-72",
+          "role": "accessory",
+          "note": "24-50: fits the 72mm filters"
+        },
+        {
           "gearID": "rt75c",
           "role": "support",
           "note": ""
+        },
+        {
+          "gearID": "k234a3",
+          "role": "support",
+          "note": "Lighter option; don't touch it mid-sequence, bag on the hook"
+        },
+        {
+          "gearID": "rt90c",
+          "role": "support",
+          "note": "Steadiest on a windy dock; swap the mount for the LH-40"
         },
         {
           "gearID": "lh40",
@@ -613,6 +730,16 @@
           "gearID": "rt75c",
           "role": "support",
           "note": "Legs spread wide, column down"
+        },
+        {
+          "gearID": "k234a3",
+          "role": "support",
+          "note": "Lighter option on calm nights; column down, bag on the hook"
+        },
+        {
+          "gearID": "rt90c",
+          "role": "support",
+          "note": "Steadiest for long sequences in wind; swap the mount for the LH-40"
         },
         {
           "gearID": "lh40",
@@ -720,9 +847,24 @@
           "note": "100-400: ~1.5 stops slower + less glare"
         },
         {
+          "gearID": "bp-67-72",
+          "role": "accessory",
+          "note": "100-400: swap the CPL for the 72mm VND for longer shutter"
+        },
+        {
           "gearID": "rt75c",
           "role": "support",
           "note": "Legs firm on rocks"
+        },
+        {
+          "gearID": "k234a3",
+          "role": "support",
+          "note": "Lighter option for trails to the falls"
+        },
+        {
+          "gearID": "rt90c",
+          "role": "support",
+          "note": "Steadiest for the 100-400 detail shots; swap the mount for the LH-40"
         },
         {
           "gearID": "lh40",
@@ -825,6 +967,16 @@
           "gearID": "rt75c",
           "role": "support",
           "note": "Push legs deep into sand"
+        },
+        {
+          "gearID": "k234a3",
+          "role": "support",
+          "note": "Lighter option; hang your bag for weight in wind"
+        },
+        {
+          "gearID": "rt90c",
+          "role": "support",
+          "note": "Steadiest in surf and wind; swap the mount for the LH-40"
         },
         {
           "gearID": "lh40",
@@ -1132,9 +1284,34 @@
           "note": "Big sun on the horizon at 400mm"
         },
         {
+          "gearID": "bp-58-72",
+          "role": "accessory",
+          "note": "24-50: fits the 72mm K&F"
+        },
+        {
+          "gearID": "kf-nanox-holder",
+          "role": "accessory",
+          "note": "100-400 on the 67mm adapter ring"
+        },
+        {
+          "gearID": "kf-gnd8-reverse",
+          "role": "filter",
+          "note": "100-400: darkest at the horizon where the sun sits"
+        },
+        {
           "gearID": "rt75c",
           "role": "support",
           "note": "Needed for bracketing and afterglow"
+        },
+        {
+          "gearID": "k234a3",
+          "role": "support",
+          "note": "Lighter option for hiking to a viewpoint"
+        },
+        {
+          "gearID": "rt90c",
+          "role": "support",
+          "note": "Steadiest for the 100-400 at 400mm; swap the mount for the LH-40"
         },
         {
           "gearID": "lh40",
@@ -1245,9 +1422,34 @@
           "note": "Sun through mist and layered hills"
         },
         {
+          "gearID": "bp-58-72",
+          "role": "accessory",
+          "note": "24-50: fits the 72mm K&F"
+        },
+        {
+          "gearID": "kf-nanox-holder",
+          "role": "accessory",
+          "note": "100-400 on the 67mm adapter ring"
+        },
+        {
+          "gearID": "kf-gnd8-reverse",
+          "role": "filter",
+          "note": "100-400: darkest at the horizon where the sun sits"
+        },
+        {
           "gearID": "rt75c",
           "role": "support",
           "note": "Set up in the dark"
+        },
+        {
+          "gearID": "k234a3",
+          "role": "support",
+          "note": "Lighter option for hiking to a viewpoint"
+        },
+        {
+          "gearID": "rt90c",
+          "role": "support",
+          "note": "Steadiest for the 100-400 at 400mm; swap the mount for the LH-40"
         },
         {
           "gearID": "lh40",
