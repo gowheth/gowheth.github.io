@@ -1,5 +1,5 @@
 {
-  "version": 21,
+  "version": 22,
   "gear": [
     {
       "id": "r8",
@@ -532,7 +532,8 @@
       "tips": [
         "Half moon shows more crater detail than full moon.",
         "Shoot when the moon is high — low moons are blurred by atmosphere.",
-        "Include a landscape? Shoot a moonrise at dusk when sky and land are both lit."
+        "Include a landscape? Shoot a moonrise at dusk when sky and land are both lit.",
+        "Travelling light? The K234A3 is enough on calm nights — legs short, column down, 2-s timer."
       ],
       "warnings": [
         "Evaluative metering overexposes the moon against a black sky — use M.",
