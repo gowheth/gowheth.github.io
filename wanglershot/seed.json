@@ -1,5 +1,5 @@
 {
-  "version": 22,
+  "version": 23,
   "gear": [
     {
       "id": "r8",
@@ -533,7 +533,8 @@
         "Half moon shows more crater detail than full moon.",
         "Shoot when the moon is high — low moons are blurred by atmosphere.",
         "Include a landscape? Shoot a moonrise at dusk when sky and land are both lit.",
-        "Travelling light? The K234A3 is enough on calm nights — legs short, column down, 2-s timer."
+        "Travelling light? The K234A3 is enough on calm nights — legs short, column down, 2-s timer.",
+        "Windy night or full 400mm? The RT90C is the steadiest — swap the telescope mount for the LH-40."
       ],
       "warnings": [
         "Evaluative metering overexposes the moon against a black sky — use M.",
